@@ -15,7 +15,7 @@ p = mc.player.getTilePos()
 # z = p.z +randint(-20,20)
 
 x = p.x + randint(-20, 20)
-y = p.y
+y = p.y - 1
 z = p.z
 
 mc.setBlock(x, y , z, block.GOLD_BLOCK.id)
@@ -42,7 +42,7 @@ while gameover == False:
     #mc.postToChat(zd)
 
     #dist_now = sqrt((xd*xd) + (yd*yd) + (zd*zd))
-    
+
     dist_now = sqrt(xd*xd)
 
     mc.postToChat(dist_now)
@@ -51,4 +51,3 @@ while gameover == False:
         led.on()
     else:
         led.off()
-
