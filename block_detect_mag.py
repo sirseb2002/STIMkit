@@ -14,9 +14,9 @@ p = mc.player.getTilePos()
 # y = p.y + randint(-5, 5)
 # z = p.z +randint(-20,20)
 
-x = p.x + randint(-20, 20)
-y = p.y - 1
-z = p.z
+x = p.x + randint(0, 25)
+y = p.y - 2
+z = p.z + randint(0, 25)
 
 mc.setBlock(x, y , z, block.GOLD_BLOCK.id)
 
@@ -35,15 +35,13 @@ while gameover == False:
 
     xd = p.x - x
     yd = p.y - y
-    zd = p.y - z
+    zd = p.z - z
 
     #mc.postToChat(xd)
     #mc.postToChat(yd)
     #mc.postToChat(zd)
 
-    #dist_now = sqrt((xd*xd) + (yd*yd) + (zd*zd))
-
-    dist_now = sqrt(xd*xd)
+    dist_now = sqrt((xd*xd) + (zd*zd))
 
     mc.postToChat(dist_now)
 
