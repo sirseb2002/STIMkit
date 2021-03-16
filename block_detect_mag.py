@@ -8,6 +8,10 @@ from math import sqrt
 mc = minecraft.Minecraft.create()
 
 mc.postToChat("Go find the block")
+sleep(1)
+
+mc.player.setPos(0.0.0)
+sleep(0.5)
 
 p = mc.player.getTilePos()
 # x = p.x + randint(-20, 20)
