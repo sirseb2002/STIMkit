@@ -10,8 +10,10 @@ mc = minecraft.Minecraft.create()
 mc.postToChat("Go find the block")
 sleep(1)
 
-mc.player.setPos(0.0.0)
+mc.player.setPos(1.0.1)
 sleep(0.5)
+
+mc.setBlock(0, 0 , 0, 5)
 
 p = mc.player.getTilePos()
 # x = p.x + randint(-20, 20)
@@ -40,10 +42,6 @@ while gameover == False:
     xd = p.x - x
     yd = p.y - y
     zd = p.z - z
-
-    #mc.postToChat(xd)
-    #mc.postToChat(yd)
-    #mc.postToChat(zd)
 
     dist_now = sqrt((xd*xd) + (zd*zd))
 
