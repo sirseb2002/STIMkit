@@ -48,6 +48,16 @@ gameover = False
 
 while gameover == False:
     IRp = mc.player.getTilePos()
-    # x = p.x + randint(-20, 20)
-    # y = p.y + randint(-5, 5)
-    # z = p.z +randint(-20,20)
+
+    xd = p.x - x
+    yd = p.y - y
+    zd = p.z - z
+
+    dist_now = sqrt((xd*xd) + (zd*zd))
+
+    mc.postToChat(dist_now)
+
+    if dist_now == 0:
+        led_target.on()
+    else:
+        led_target.off()
