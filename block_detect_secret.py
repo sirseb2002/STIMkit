@@ -38,7 +38,7 @@ DTy = p.y - 2
 DTz = p.z + randint(26, 100)
 
 
-mc.setBlock(IRx, IRy , IRz, block.IRON.id)
+mc.setBlock(IRx, IRy , IRz, block.IRON_ORE.id)
 mc.setBlock(SSx, SSy , SSz, block.SANDSTONE.id)
 mc.setBlock(GRx, GRy , GRz, block.GRAVEL.id)
 mc.setBlock(DTx, DTy , DTz, block.DIRT.id)
