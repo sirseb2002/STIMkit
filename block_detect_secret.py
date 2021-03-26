@@ -7,6 +7,11 @@ from math import sqrt
 
 led_target = LED(26)
 
+#Commentaire de test
+# commentaire 2
+# commentaire 3
+# commentaire 4
+
 led_target.on()
 sleep(2)
 led_target.off()
