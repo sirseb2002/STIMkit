@@ -72,7 +72,7 @@ led_target.off()
 
 
 #Étape 9 Partons à la chasse d'un bloc d'or!
-dist = 0
+
 gameover = False
 
 while gameover == False:
