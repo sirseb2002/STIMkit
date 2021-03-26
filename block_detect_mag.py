@@ -1,7 +1,7 @@
 # Programme mission 2
 
 #Etape 1
-#importez les librairies utiles à la mission 2
+#importez les librairies utiles a la mission 2
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 from random import randint
@@ -17,7 +17,7 @@ mc = minecraft.Minecraft.create()
 
 
 #Etape 3
-#Demandons au libraire d'afficher un message sur l'écran
+#Demandons au libraire d afficher un message sur l ecran
 mc.postToChat("Allez trouver le bloc d'or")
 #Donnons-nous du temps pour le voir
 sleep(1)
@@ -42,7 +42,7 @@ led10= LED(21)
 
 
 #Etape 5
-#Placons notre travailleur à une position connue dans Minecraft
+#Placons notre travailleur a une position connue dans Minecraft
 mc.player.setPos(1, 0, 1)
 #Donnons-nous du temps avant de passer a la prochaine etape
 sleep(0.5)
@@ -52,7 +52,7 @@ mc.setBlock(0, 0 , 0, block.FENCE.id)
 
 
 #Etape 6 UN PEU DE MATHEMATIQUE !
-#
+
 p = mc.player.getTilePos()
 
 x = p.x + randint(0, 25)
@@ -71,7 +71,7 @@ sleep(3)
 led_target.off()
 
 
-#Etape 9 Partons a la chasse d'un bloc d or!
+#Etape 9 Partons a la chasse d un bloc d or!
 
 gameover = False
 
@@ -128,7 +128,7 @@ while gameover == False:
     else:
         led1.off()
 
-#Etape 11 Allumons la DEL VERTE quand on est direct sur le bloc d or!
+#Etape 11 Allumons la DEL VERTE quand on est au dessu du bloc d or!
     if dist_now == 0:
         led_target.on()
     else:
