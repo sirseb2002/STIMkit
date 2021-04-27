@@ -4,7 +4,9 @@ cd ..
 
 cd STIMkit
 
-rm -r*
+rm*
+
+rmdirSTIMkit
 
 git clone https://github.com/sirseb2002/STIMkit/
 
