@@ -2,12 +2,10 @@
 
 cd ..
 
-cd STIMkit
-
-rm*
-
-rmdirSTIMkit
+yes | rm -r STIMkit
 
 git clone https://github.com/sirseb2002/STIMkit/
 
-sudo cp -r /home/pi/STIMkit/mars_1.5c /home/pi/.minecraft/games/com.mojang/minecraftWorlds/
+cp -r ~/STIMkit/Flatworld/* ~/.minecraft/games/com.mojang/minecraftWorlds
+
+$SHELL
