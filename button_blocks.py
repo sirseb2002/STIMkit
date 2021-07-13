@@ -228,7 +228,7 @@ if (var_block1 == 1) and (var_block2 == 0):
 if (var_block1 == 1) and (var_block2 == 1) and (var_block3 == 0):
     mc.postToChat("Veuillez appuyer sur le boutton 3")
     button3.wait_for_press()
-    print("Button 3 est appuyé")
+    print("Boutton 3 est appuyé")
     p = mc.player.getTilePos()
     x = p.x + randint(0, 25)
     y = p.y - 2
