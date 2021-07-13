@@ -73,7 +73,7 @@ def end3():
         code3()
         var_block3 = 1
     sleep(1)
-    mc.postToChat("Allez maintenant verifier votre code à coter de la cloture")
+    mc.postToChat("Allez maintenant verifier votre code a coter de la cloture")
 
 #Ceci fait que le premier chiffre du code apparaisse
 def code1():
@@ -86,14 +86,14 @@ def code1():
 #Ceci fait que le deuxième chiffre du code apparaisse
 def code2():
     print("code2")
-    mc.setBlock(5, 8, 0, block.WOOL.id)
+    mc.setBlock(5, 7, 0, block.WOOL.id)
 
 #Ceci fait que le deuxième chiffre du code apparaisse
 def code3():
     print("code3")
-    mc.setBlock(5, 6, 0, block.WOOL.id)
-    mc.setBlock(7, 6, 0, block.WOOL.id)
-    mc.setBlock(9, 6, 0, block.WOOL.id)
+    mc.setBlock(5, 4, 0, block.WOOL.id)
+    mc.setBlock(7, 4, 0, block.WOOL.id)
+    mc.setBlock(9, 4, 0, block.WOOL.id)
 
 #Ceci éteint tous les LED 
 def clear_led():
