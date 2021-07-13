@@ -40,7 +40,7 @@ def message():
 def end1():
     global var_block1
     global run_once
-    print("end1")
+    print("fin 1")
     clear_led()
     if var_block1 == 0:
         code1()
@@ -53,7 +53,7 @@ def end2():
     global var_block1
     global var_block2
     global run_once
-    print("end2")
+    print("fin 2")
     clear_led()
     if (var_block1 == 1) and (var_block2 == 0):
         code2()
@@ -66,7 +66,7 @@ def end3():
     global var_block1
     global var_block2
     global var_block3
-    print("end3")
+    print("fin 3")
     clear_led()
     mc.postToChat("Bravo!!!")
     if (var_block1 == 1) and (var_block2 == 1) and (var_block3 ==0):
@@ -77,7 +77,7 @@ def end3():
 
 #Ceci fait que le premier chiffre du code apparaisse
 def code1():
-    print("code1")
+    print("code 1")
     mc.setBlock(5, 10, 0, block.WOOL.id)
     mc.setBlock(7, 10, 0, block.WOOL.id)
     mc.setBlock(9, 10, 0, block.WOOL.id)
@@ -85,19 +85,19 @@ def code1():
 
 #Ceci fait que le deuxième chiffre du code apparaisse
 def code2():
-    print("code2")
+    print("code 2")
     mc.setBlock(5, 7, 0, block.WOOL.id)
 
 #Ceci fait que le deuxième chiffre du code apparaisse
 def code3():
-    print("code3")
+    print("code 3")
     mc.setBlock(5, 4, 0, block.WOOL.id)
     mc.setBlock(7, 4, 0, block.WOOL.id)
     mc.setBlock(9, 4, 0, block.WOOL.id)
 
 #Ceci éteint tous les LED 
 def clear_led():
-    print("led off")
+    print("LED fermées")
     led1.off()
     led2.off()
     led3.off()
@@ -118,7 +118,7 @@ def distance_now():
     global var_block3
     global run_once
     gameover = False
-    print("Block is placed")
+    print("Bloc est placé")
     while gameover == False:
         p = mc.player.getTilePos()
 
@@ -176,7 +176,7 @@ def distance_now():
                 message()
                 run_once = 1
             if button4.is_pressed:
-                print("Button4 is pressed")
+                print("Boutton 4 est appuyé")
                 gameover = True
         else:
             led_target.off()
@@ -196,7 +196,7 @@ mc.setBlock(0, 0, 0, block.FENCE.id)
 if var_block1 == 0:
     mc.postToChat("Veuillez appuyer sur le boutton 1")
     button1.wait_for_press()
-    print("Button1 is pressed")
+    print("Boutton 1 est appuyé")
     p = mc.player.getTilePos()
     x = p.x + randint(0, 25)
     y = p.y - 2
@@ -212,7 +212,7 @@ if var_block1 == 0:
 if (var_block1 == 1) and (var_block2 == 0):
     mc.postToChat("Veuillez appuyer sur le boutton 2")
     button2.wait_for_press()
-    print("Button2 is pressed")
+    print("Boutton 2 est appuyé")
     p = mc.player.getTilePos()
     x = p.x + randint(0, 25)
     y = p.y - 2
@@ -228,7 +228,7 @@ if (var_block1 == 1) and (var_block2 == 0):
 if (var_block1 == 1) and (var_block2 == 1) and (var_block3 == 0):
     mc.postToChat("Veuillez appuyer sur le boutton 3")
     button3.wait_for_press()
-    print("Button3 is pressed")
+    print("Button 3 est appuyé")
     p = mc.player.getTilePos()
     x = p.x + randint(0, 25)
     y = p.y - 2
