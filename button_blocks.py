@@ -73,7 +73,7 @@ def end3():
         code3()
         var_block3 = 1
     sleep(1)
-    mc.postToChat("Allez maintenant verifier votre code a coter de la cloture")
+    mc.postToChat("Allez maintenant verifier votre code au point de depart")
 
 #Ceci fait que le premier chiffre du code apparaisse
 def code1():
