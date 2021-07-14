@@ -39,7 +39,7 @@ def distance_now():
     global var_block3
     global run_once
     gameover = False
-    print("Block is placed")
+    print("Un bloc est enfoui")
     while gameover == False:
         p = mc.player.getTilePos()
 
@@ -97,7 +97,7 @@ def distance_now():
                 message()
                 run_once = 1
             if button4.is_pressed:
-                print("Button4 is pressed")
+                print("Bouton 4 est appuye")
                 gameover = True
         else:
             led_target.off()
